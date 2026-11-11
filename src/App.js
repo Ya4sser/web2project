@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
 import BookDetails from "./pages/BookDetails";
@@ -16,6 +17,7 @@ function App() {
   return (
     <CartProvider>
       <HashRouter>
+        <ScrollToTop />
         <Navbar />
         <main className="min-h-[70vh]">
           <Routes>
