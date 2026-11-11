@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import BookCover from "../components/BookCover";
 
 function Cart() {
   const { cart, updateQuantity, removeFromCart, clearCart, total } = useCart();
@@ -45,9 +44,11 @@ function Cart() {
         <ul className="divide-y divide-sand">
           {cart.map((item) => (
             <li key={item.id} className="flex gap-4 py-5">
-              <div className="w-16 shrink-0 sm:w-20">
-                <BookCover book={item} />
-              </div>
+              {/* Small colored block as a thumbnail (full cover text is too small here) */}
+              <div
+                className="aspect-[2/3] w-14 shrink-0 rounded-r-md border-l-4 border-black/25 shadow sm:w-16"
+                style={{ backgroundColor: item.color }}
+              />
 
               <div className="flex flex-1 flex-col justify-between sm:flex-row sm:items-center">
                 <div>
