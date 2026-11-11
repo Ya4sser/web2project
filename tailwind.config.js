@@ -12,7 +12,7 @@ module.exports = {
         sand: "#e8dcc4", // borders and soft backgrounds
       },
       fontFamily: {
-        serif: ["Georgia", "Cambria", "serif"],
+        serif: ["Fraunces", "Georgia", "Cambria", "serif"],
         sans: ["Inter", "system-ui", "Arial", "sans-serif"],
       },
     },
