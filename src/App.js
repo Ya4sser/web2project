@@ -7,6 +7,7 @@ import BookDetails from "./pages/BookDetails";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import { CartProvider } from "./context/CartContext";
 
 // HashRouter is used because it works on GitHub Pages without extra setup
@@ -23,6 +24,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
