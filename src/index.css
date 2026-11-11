@@ -1,0 +1,21 @@
+/* Load Tailwind's base styles, components and utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+/* Reusable button styles so we don't repeat long class lists */
+@layer components {
+  .btn {
+    @apply inline-block rounded-full bg-clay px-6 py-2.5 font-medium text-white transition hover:bg-ink;
+  }
+  .btn-outline {
+    @apply inline-block rounded-full border border-ink px-6 py-2.5 font-medium transition hover:bg-ink hover:text-white;
+  }
+  .input {
+    @apply w-full rounded-lg border border-sand bg-white px-4 py-2.5 outline-none focus:border-clay;
+  }
+}
