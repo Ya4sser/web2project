@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 // The links shown in the navigation bar
 const links = [
@@ -13,6 +14,7 @@ const links = [
 function Navbar() {
   // Controls whether the mobile menu is open
   const [menuOpen, setMenuOpen] = useState(false);
+  const { itemCount } = useCart();
 
   // NavLink gives us "isActive" so we can highlight the current page
   const linkClass = ({ isActive }) =>
@@ -38,7 +40,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link to="/cart" className="rounded-full border border-ink px-4 py-1.5 text-sm hover:bg-ink hover:text-white">
-            Cart
+            Cart ({itemCount})
           </Link>
 
           {/* Hamburger button (only on small screens) */}
