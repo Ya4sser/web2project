@@ -6,8 +6,7 @@ const values = [
 ];
 
 const team = [
-  { name: "Yasser", role: "Frontend Developer", initials: "Y" },
-  { name: "Team Member", role: "UI/UX Designer", initials: "TM" },
+  { name: "Yasser", role: "Frontend Developer", initials: "Y" }
 ];
 
 function About() {
