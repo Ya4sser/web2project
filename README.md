@@ -1,8 +1,8 @@
-# Folio — Online Bookstore
+ Online Bookstore
 
 **CSCI426: Advanced Web Programming — Project Phase 1 (Frontend)**
 
-Folio is a responsive online bookstore built with **React** and **Tailwind CSS**. Users can browse a catalog of classic books, search by title or author, filter by category, open a details page for each book, add books to a cart and place an order.
+this is a responsive online bookstore built with **React** and **Tailwind CSS**. Users can browse a catalog of classic books, search by title or author, filter by category, open a details page for each book, add books to a cart and place an order.
 
 > Phase 1 covers the frontend only. Book data lives in `src/data/books.js` and the cart is saved in the browser's `localStorage`. A backend will replace both in a later phase.
 
